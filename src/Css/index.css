@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  background-color: rgb(26, 6, 6);
+  color: white;
+}
+body .container .header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .container .header img {
+  width: 280px;
+  margin-bottom: 10px;
+}
+body .container .header h1, body .container .header .job-title, body .container .header .entreprise {
+  margin-block: 10px;
+}
+body .container .header .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .container .header .buttons button {
+  width: 110px;
+  border-radius: 5px;
+  padding: 5px;
+}
+body .container .header .buttons .btn-email, body .container .header .buttons .btn-linkedin {
+  background-color: white;
+  font-size: 1rem;
+}
+body .container .header .buttons .btn-email > .email-logo, body .container .header .buttons .btn-linkedin > .linkedin-logo {
+  margin-right: 10px;
+}
+body .container .header .buttons .linkedin-logo {
+  font-size: 1.3rem;
+}
+body .container .main {
+  width: 300px;
+  margin-bottom: 30px;
+}
+body .container .main .about, body .container .main .interests {
+  color: rgb(157, 231, 231);
+}
+body .container .footer {
+  width: 400px;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .container .footer i {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

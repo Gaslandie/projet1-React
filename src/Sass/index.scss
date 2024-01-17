@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        // text-align: center;
+        padding: 10px;
+        background-color: rgb(26, 6, 6);
+        color: white;
+        .header{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            img{
+                width: 280px;
+                margin-bottom: 10px;
+            }
+            h1,.job-title,.entreprise{
+                margin-block: 10px;
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-evenly;
+                button{
+                    width: 110px;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                .btn-email,.btn-linkedin{
+                    background-color: white;
+                    font-size: 1rem;
+                }
+                .btn-email > .email-logo,.btn-linkedin > .linkedin-logo{
+                    margin-right: 10px;
+                }
+                .linkedin-logo{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        //pour notre main
+        .main{
+            width: 300px;
+            margin-bottom: 30px;
+            .about,.interests{
+                color: rgb(157, 231, 231);
+            }
+        }
+        .footer{
+            width: 400px;
+            position:absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            // background-color: rgb(161, 139, 112);
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+
+}
